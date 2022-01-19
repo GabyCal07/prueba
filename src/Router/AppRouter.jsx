@@ -6,16 +6,16 @@ import { Contacto } from '../middleware/Contacto';
 
 import {
   BrowserRouter as Router,
-  Route,  
-  Routes,      
-} from "react-router-dom";
+  Route,             
+  Routes, 
+} from 'react-router-dom';
 
 
 export default function AppRouter() {
 
   return (
     <Router>
-      <div>
+      {/* <div> */}
         <Routes>
         
           <Route exact path='/' element={ <Inicio />} />
@@ -29,9 +29,9 @@ export default function AppRouter() {
           
           <Route exact path="/contacto" element={ <Contacto />} />
 
-        </Routes>
+        </Routes>       
         
-      </div>
+      {/* </div> */}
     </Router>
 )}
 
